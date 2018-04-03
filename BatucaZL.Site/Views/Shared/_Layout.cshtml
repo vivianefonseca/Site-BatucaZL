@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batuca ZL</title>
+
+    <environment names="Development">
+        <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        @RenderSection("Styles", required: false)
+        <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+    <environment names="Production,Staging">
+        <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        @RenderSection("Styles", required: false)
+        <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class="text-center">
+        <a class="logo-link" href="index.html"><img class="img-logo" src="~/images/logo.png" /></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-2 bg-default">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="Index">Home</a>
+                    </li>
+                    @*<li class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="Home/Aulas">Aulas</a>
+                            </li>
+                            <li class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="Home/Professor">Professor</a>
+                            </li>
+                            <li class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="Home/Eventos">Eventos</a>
+                            </li>
+                            <li class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="Home/Fotos">Fotos</a>
+                            </li>
+                            <li class="nav-item px-lg-4">
+                                    <a class="nav-link text-uppercase text-expanded" href="">Loja</a>
+                                </li>
+                        <li class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="Contato">Contato</a>
+                        </li>*@
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footer bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Whatsapp</p>
+                    <p>
+                        <a href="tel:11973869814">11 97386-9814</a>
+                    </p>
+                </div>
+                <div class="col-md-4 mt-1">
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCDc_wRvEWHoc9fDtNgTz2BA?view_as=subscriber" style="background-color:#FF0000">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/osmarmedeiroscruz/" style="background-color:#395F93">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/batucazl/" style="background: linear-gradient(rgb(249, 46, 71), rgb(222, 35, 111))">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>&copy Batuca ZL</p>
+                    <p>Aulas de Bateria em Itaquera - SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <environment names="Development">
+        <script src="~/vendor/jquery/jquery.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment names="Production,Staging">
+        @*<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/lib/jquery/jquery.min.js"
+            asp-fallback-test="window.jQuery"></script>*@
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+
+    <environment names="Development">
+        <script src="~/js/site.js"></script>
+    </environment>
+    <environment names="Production,Staging">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116661418-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-116661418-1');
+        </script>
+    </environment>
+</body>
+</html>

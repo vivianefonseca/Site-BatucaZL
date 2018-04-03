@@ -1,0 +1,113 @@
+﻿body {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5)), url(../images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* header */
+
+.img-logo {
+    width: 12rem;
+    height: 12rem;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+/* content */
+
+.bg-description {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.content {
+    margin-right: 2rem;
+    z-index: 1;
+}
+
+.title-strong {
+    font-weight: bold;
+}
+
+.description-img {
+    height: 60%;
+    width: 60%;
+    position: relative;
+    z-index: 0;
+}
+
+.text-from-image {
+    margin-top: -4rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* general */
+p {
+    line-height: 2;
+    margin: 0;
+}
+
+.bg-default {
+    background-color: #00134E;
+}
+
+.navbar {
+    font-weight: bold;
+}
+
+/* content principal home */
+
+header.home-principal {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+    header.home-principal .intro-md {
+        font-size: 2rem;
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+
+    header.home-principal .intro-lg {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+/* footer social icons */
+
+.footer {
+    color: #fff;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 0.8rem;
+}
+
+ul.social-icons li a {
+    display: block;
+    margin-right: 1rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+}

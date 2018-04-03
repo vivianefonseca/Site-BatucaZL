@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8ED94B01-789A-492D-97D3-D115F15944E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatucaZL.Site", "BatucaZL.Site\BatucaZL.Site.csproj", "{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6DF0982-99BC-48C1-B586-FEB5F3B26DCA} = {8ED94B01-789A-492D-97D3-D115F15944E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3B8D04E-E9F1-4B3E-ADC1-9DB4F999AB34}
+	EndGlobalSection
+EndGlobal
